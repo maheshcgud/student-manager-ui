@@ -1,0 +1,98 @@
+[
+  {
+      "id": 1,
+      "studentNumber": "R818021P",
+      "firstName": "Rajesh",
+      "lastName": "Parasa",
+      "dateOfBirth": "18/05/1986",
+      "cellphoneNumber": "+234567890",
+      "emailAddress": "rajesh.parasa@example.com",
+      "currentScore": 89.0,
+      "averageScore": 89.0,
+      "studentFullName": "Rajesh Parasa"
+  },
+  {
+      "id": 2,
+      "studentNumber": "S308227S",
+      "firstName": "Steve",
+      "lastName": "Smith",
+      "dateOfBirth": "18/05/1986",
+      "cellphoneNumber": "+334567890",
+      "emailAddress": "Steve.Smith@example.com",
+      "currentScore": 91.0,
+      "averageScore": 91.0,
+      "studentFullName": "Steve Smith"
+  },
+  {
+      "id": 2,
+      "studentNumber": "M771308J",
+      "firstName": "Micheal",
+      "lastName": "Jack",
+      "dateOfBirth": "10/07/1986",
+      "cellphoneNumber": "+234567899",
+      "emailAddress": "Micheal.Jack@example.com",
+      "currentScore": 93.0,
+      "averageScore": 93.0,
+      "studentFullName": "Micheal Jack"
+  },
+  {
+      "id": 3,
+      "studentNumber": "V602315K",
+      "firstName": "Virat",
+      "lastName": "Kohli",
+      "dateOfBirth": "10/07/1989",
+      "cellphoneNumber": "+234567821",
+      "emailAddress": "Virat.Kohli@example.com",
+      "currentScore": 89.0,
+      "averageScore": 89.5,
+      "studentFullName": "Virat Kohli"
+  },
+  {
+      "id": 4,
+      "studentNumber": "M800896C",
+      "firstName": "Mahesh",
+      "lastName": "Chintala",
+      "dateOfBirth": "11/05/1986",
+      "cellphoneNumber": "+934567890",
+      "emailAddress": "Mahesh.Chintala@example.com",
+      "currentScore": 79.0,
+      "averageScore": 79.5,
+      "studentFullName": "Mahesh Chintala"
+  },
+  {
+      "id": 5,
+      "studentNumber": "P752208P",
+      "firstName": "Praveen",
+      "lastName": "Peravali",
+      "dateOfBirth": "18/09/1989",
+      "cellphoneNumber": "+934567825",
+      "emailAddress": "Pravenn.Peravali@example.com",
+      "currentScore": 95.0,
+      "averageScore": 95.0,
+      "studentFullName": "Praveen Peravali"
+  },
+  {
+      "id": 6,
+      "studentNumber": "N875260M",
+      "firstName": "New",
+      "lastName": "Man",
+      "dateOfBirth": "18/09/1989",
+      "cellphoneNumber": "+934567825",
+      "emailAddress": "New.Man@example.com",
+      "currentScore": 95.0,
+      "averageScore": 95.0,
+      "studentFullName": "New Man"
+  },
+  {
+      "id": 7,
+      "studentNumber": "T009672M",
+      "firstName": "Test",
+      "lastName": "Man",
+      "dateOfBirth": "18/09/1989",
+      "cellphoneNumber": "+934567825",
+      "emailAddress": "Test.Man@example.com",
+      "currentScore": 95.0,
+      "averageScore": 95.0,
+      "studentFullName": "Test Man"
+  }
+]
