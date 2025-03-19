@@ -2,8 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
-import { Button } from '@mui/material';
-import { TextField } from '@mui/material';
+import { Button,FormControl, InputLabel, MenuItem, Select,TextField } from '@mui/material';
+// import {  } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 // import axios from "axios";
 
@@ -23,6 +23,7 @@ const StudentForm = ({setStudentData}) => {
             .min(8, 'Email must be at least 8 characters long')
             .max(50, 'Email cannot exceed 50 characters')
             .required('Email is required'),
+        isdCode: yup.string().required("ISD code is required"),
         mobileno: yup
         .string()
         .matches(
@@ -47,6 +48,7 @@ const StudentForm = ({setStudentData}) => {
         initialValues: {
             firstname: '',
             lastname: '',
+            isdCode: '+1',
             mobileno: '',
             email: '',
             dob: '',
@@ -59,7 +61,7 @@ const StudentForm = ({setStudentData}) => {
                 "lastName": values.lastname,
                 "dateOfBirth": values.dob,
                 "emailAddress": values.email,
-                "cellphoneNumber": values.mobileno,
+                "cellphoneNumber": `${values.isdCode}${values.mobileno}`,
                 "currentScore": values.score
             }
             console.log(requestData);
@@ -107,7 +109,29 @@ const StudentForm = ({setStudentData}) => {
                         helperText={formik.touched.lastname && formik.errors.lastname}
                     />
                 </Grid>
-                <Grid size={6}>
+                <Grid size={2}>
+                    <FormControl fullWidth>
+                    <InputLabel id="isdCode-label" required>ISD Code</InputLabel>
+                        <Select
+                            labelId="isdCode-label"
+                            id="isdCode"
+                            name="isdCode"
+                            as={Select}
+                            value={formik.values.isdCode}
+                            label="ISD Code"
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            error={formik.touched.isdCode && Boolean(formik.errors.isdCode)}
+                        >
+                            <MenuItem value="+1">+1 (USA)</MenuItem>
+                            <MenuItem value="+44">+44 (UK)</MenuItem>
+                            <MenuItem value="+91">+91 (India)</MenuItem>
+                            <MenuItem value="+61">+61 (Australia)</MenuItem>
+                            <MenuItem value="+81">+81 (Japan)</MenuItem>
+                        </Select>
+                    </FormControl>
+                </Grid>
+                <Grid size={4}>
                     <TextField
                         required
                         fullWidth
@@ -117,6 +141,7 @@ const StudentForm = ({setStudentData}) => {
                         value={formik.values.mobileno}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
+                        placeholder="Enter 10-digit number"
                         error={formik.touched.mobileno && Boolean(formik.errors.mobileno)}
                         helperText={formik.touched.mobileno && formik.errors.mobileno}
                     />
