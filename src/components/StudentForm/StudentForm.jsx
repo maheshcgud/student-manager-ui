@@ -123,9 +123,10 @@ const StudentForm = ({setStudentData}) => {
                             onBlur={formik.handleBlur}
                             error={formik.touched.isdCode && Boolean(formik.errors.isdCode)}
                         >
+                            <MenuItem value="+91">+91 (India)</MenuItem>
+                            <MenuItem value="+27">+27 (South Africa)</MenuItem>
                             <MenuItem value="+1">+1 (USA)</MenuItem>
                             <MenuItem value="+44">+44 (UK)</MenuItem>
-                            <MenuItem value="+91">+91 (India)</MenuItem>
                             <MenuItem value="+61">+61 (Australia)</MenuItem>
                             <MenuItem value="+81">+81 (Japan)</MenuItem>
                         </Select>
